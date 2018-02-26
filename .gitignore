@@ -1,0 +1,8 @@
+node_modules/
+platforms/
+plugins/
+www/
+coverage/
+npm-debug.log
+.idea/
+lisa-mobile-dist.zip

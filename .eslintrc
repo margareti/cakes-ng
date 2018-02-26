@@ -1,0 +1,22 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "extends": [
+    "angular",
+    "eslint:recommended"
+  ],
+  "plugins": [
+    "standard",
+    "angular"
+  ],
+  "rules": {
+    "camelcase": 2,
+    "no-unused-vars": 2,
+    "no-undef": 2,
+    "curly": 2,
+    "angular/one-dependency-per-line": 2,
+    "angular/no-service-method": 0
+  }
+}
