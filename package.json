@@ -4,7 +4,7 @@
   "description": "",
   "main": "app/index.js",
   "scripts": {
-    "start": "npm webpack-dev-server --progress --debug",
+    "start": "webpack-dev-server --progress --debug",
     "clean": "rm -rf www/*",
     "test": "karma start",
     "build": "webpack --config webpack.prod.config.js",
