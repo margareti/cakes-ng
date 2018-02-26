@@ -10,7 +10,9 @@ class LandingController {
   }
 
   init() {
-    this.cakesService.getCakes();
+    this.cakesService.getAllCakes().then((response) => {
+      this.cakes = response;
+    });
   }
 }
 
