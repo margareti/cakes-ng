@@ -17,10 +17,29 @@ class CakesService {
   getCakeById(id) {
     return this.http.get(`${this.server}/cakes/${id}`)
       .then((response) => {
-        this.log.info('id cake', response);
         return response.data;
       });
   }
+
+  updateCake(cake) {
+    return this.http.put(`${this.server}/cakes/${cake.id}`, cake)
+      .then((response) => {
+        return response.data;
+      });
+  }
+
+  addCake(cake) {
+    return this.http.post(`${this.server}/cakes/`, cake)
+      .then((response) => {
+        return response.data;
+      });
+  }
+
+  removeCake(id) {
+    return this.http.delete(`${this.server}/cakes/${id}`)
+      .then((response) => {
+        return response.data;
+      });  }
 }
 
 angular
