@@ -1,7 +1,7 @@
 import './main.scss';
 
 import './app';
-import './common/config';
+
 import './layout/layoutController.js';
 import './cakes/cakesController.js';
 import './cakes/cakesDetailController.js';
