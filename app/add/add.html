@@ -1,0 +1,34 @@
+<ion-view class="cakes">
+  <ion-nav-bar side="left">
+    <button class="button" back>Back to Cakes</button>
+  </ion-nav-bar>
+  <ion-content>
+  <ion-content>
+
+    <div class="container">
+      <h1 >Add your own cake</h1>
+      {{$ctrl.addCakeForm.$valid}}
+      <form name="$ctrl.addCakeForm" ng-submit="$ctrl.addCakeForm.$valid && $ctrl.submit($ctrl.cake)">
+        <label>
+          URL of cake
+          <input type="text" name="url" ng-model="$ctrl.cake.imageUrl" required></label>
+        </label>
+        <label>
+          Cake Name
+          <input type="text" name="name" ng-model="$ctrl.cake.name" required></label>
+        </label>
+        <label>
+          How good is it?
+          <input type="text" name="comment" ng-model="$ctrl.cake.comment"></label>
+        </label>
+        <label>
+          How good is it from 1 to 5
+          <input type="number" name="yumFactor" min="0" max="5" ng-model="$ctrl.cake.yumFactor"></label>
+        </label>
+        <button type="submit">Make em drool!!!</button>
+      </form>
+    </div>
+
+    </div>
+  </ion-content>
+</ion-view>

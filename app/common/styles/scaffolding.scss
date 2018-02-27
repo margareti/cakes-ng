@@ -1,0 +1,26 @@
+label,
+input {
+  display: block;
+  font-size: 1.2em;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+form {
+  font-size: 12px;
+}
+
+input {
+  width: 100%;
+  margin-top: 10px;
+  border: 1px solid cornflowerblue;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+}

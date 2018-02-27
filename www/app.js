@@ -247,7 +247,7 @@ eval("// Copyright Joyent, Inc. and other Node contributors.\n//\n// Permission 
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\n__webpack_require__(29);\n\n__webpack_require__(31);\n\n__webpack_require__(38);\n\n__webpack_require__(40);\n\n__webpack_require__(43);\n\n__webpack_require__(45);\n\nangular.module('cakesss').config(function ($urlRouterProvider) {\n  $urlRouterProvider.otherwise('/cakes');\n});\n\n//////////////////\n// WEBPACK FOOTER\n// ./app/index.js\n// module id = 28\n// module chunks = 0\n\n//# sourceURL=webpack:///./app/index.js?");
+eval("\n\n__webpack_require__(29);\n\n__webpack_require__(31);\n\n__webpack_require__(38);\n\n__webpack_require__(40);\n\n__webpack_require__(43);\n\n__webpack_require__(46);\n\n__webpack_require__(45);\n\n__webpack_require__(48);\n\nangular.module('cakesss').config(function ($urlRouterProvider) {\n  $urlRouterProvider.otherwise('/cakes');\n});\n\n//////////////////\n// WEBPACK FOOTER\n// ./app/index.js\n// module id = 28\n// module chunks = 0\n\n//# sourceURL=webpack:///./app/index.js?");
 
 /***/ }),
 /* 29 */
@@ -259,7 +259,7 @@ eval("// style-loader: Adds some css to the DOM by adding a <style> tag\n\n// lo
 /* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(2)();\n// imports\n\n\n// module\nexports.push([module.i, \".home {\\n  background: pink; }\\n\", \"\"]);\n\n// exports\n\n\n//////////////////\n// WEBPACK FOOTER\n// ./node_modules/css-loader!./node_modules/autoprefixer-loader!./node_modules/sass-loader/lib/loader.js!./app/main.scss\n// module id = 30\n// module chunks = 0\n\n//# sourceURL=webpack:///./app/main.scss?./node_modules/css-loader!./node_modules/autoprefixer-loader!./node_modules/sass-loader/lib/loader.js");
+eval("exports = module.exports = __webpack_require__(2)();\n// imports\n\n\n// module\nexports.push([module.i, \"label,\\ninput {\\n  display: block;\\n  font-size: 1.2em; }\\n\\nlabel {\\n  margin-bottom: 10px; }\\n\\nform {\\n  font-size: 12px; }\\n\\ninput {\\n  width: 100%;\\n  margin-top: 10px;\\n  border: 1px solid cornflowerblue;\\n  border-radius: 5px;\\n  padding: 3px; }\\n\\n.container {\\n  max-width: 700px;\\n  margin: 0 auto; }\\n\", \"\"]);\n\n// exports\n\n\n//////////////////\n// WEBPACK FOOTER\n// ./node_modules/css-loader!./node_modules/autoprefixer-loader!./node_modules/sass-loader/lib/loader.js!./app/main.scss\n// module id = 30\n// module chunks = 0\n\n//# sourceURL=webpack:///./app/main.scss?./node_modules/css-loader!./node_modules/autoprefixer-loader!./node_modules/sass-loader/lib/loader.js");
 
 /***/ }),
 /* 31 */
@@ -328,7 +328,7 @@ eval("\n\nvar _createClass = function () { function defineProperties(target, pro
 /* 41 */
 /***/ (function(module, exports) {
 
-eval("module.exports = \"<ion-view class=\\\"cakes\\\">\\n  <ion-content>\\n\\n    <div class=\\\"cakes__content\\\">\\n      <h1 >Cakess</h1>\\n      <div class=\\\"item\\\" ng-repeat=\\\"cake in $ctrl.cakes\\\" ng-click=\\\"$ctrl.goToCake(cake.id)\\\">\\n        <h3>{{cake.name}}</h3>\\n        <img class=\\\"cakes__img\\\" ng-src=\\\"{{cake.imageUrl}}\\\">\\n      </div>\\n    </div>\\n\\n    </div>\\n  </ion-content>\\n</ion-view>\\n\";\n\n//////////////////\n// WEBPACK FOOTER\n// ./app/cakes/cakes.html\n// module id = 41\n// module chunks = 0\n\n//# sourceURL=webpack:///./app/cakes/cakes.html?");
+eval("module.exports = \"<ion-view class=\\\"cakes\\\">\\n  <ion-nav-bar>\\n    <button class=\\\"button\\\" ui-sref=\\\"public.add\\\">Upload your own cake</button>\\n  </ion-nav-bar>\\n  <ion-content>\\n  <ion-content>\\n\\n    <div class=\\\"cakes__content\\\">\\n      <h1 >Cakess</h1>\\n      <div class=\\\"item\\\" ng-repeat=\\\"cake in $ctrl.cakes\\\" ng-click=\\\"$ctrl.goToCake(cake.id)\\\">\\n        <h3>{{cake.name}}</h3>\\n        <img class=\\\"cakes__img\\\" ng-src=\\\"{{cake.imageUrl}}\\\">\\n      </div>\\n    </div>\\n\\n    </div>\\n  </ion-content>\\n</ion-view>\\n\";\n\n//////////////////\n// WEBPACK FOOTER\n// ./app/cakes/cakes.html\n// module id = 41\n// module chunks = 0\n\n//# sourceURL=webpack:///./app/cakes/cakes.html?");
 
 /***/ }),
 /* 42 */
@@ -347,7 +347,7 @@ eval("\n\nvar _createClass = function () { function defineProperties(target, pro
 /* 44 */
 /***/ (function(module, exports) {
 
-eval("module.exports = \"<ion-view class=\\\"cakes\\\">\\n  <ion-nav-bar side=\\\"left\\\">\\n    <button class=\\\"button\\\" ng-click=\\\"$ctrl.back()\\\">Back</button>\\n  </ion-nav-bar>\\n  <ion-content>\\n\\n    <div class=\\\"cakes__content\\\">\\n      <h2>{{$ctrl.cake.name}}</h2>\\n      <img class=\\\"cakes__img\\\" ng-src=\\\"{{$ctrl.cake.imageUrl}}\\\">\\n      <h3>Something about this cake?</h3>\\n      <p>{{$ctrl.cake.comment ? $ctrl.cake.comment : 'Nothing yet...'}}</p>\\n    </div>\\n  </ion-content>\\n</ion-view>\\n\";\n\n//////////////////\n// WEBPACK FOOTER\n// ./app/cakes/cake.html\n// module id = 44\n// module chunks = 0\n\n//# sourceURL=webpack:///./app/cakes/cake.html?");
+eval("module.exports = \"<ion-view class=\\\"cakes\\\">\\n  <ion-nav-bar>\\n    <button class=\\\"button\\\" ng-click=\\\"$ctrl.back()\\\">Back</button>\\n  </ion-nav-bar>\\n  <ion-content>\\n    <div class=\\\"cakes__content\\\">\\n      <h2>{{$ctrl.cake.name}}</h2>\\n      <img class=\\\"cakes__img\\\" ng-src=\\\"{{$ctrl.cake.imageUrl}}\\\">\\n      <h3>Something about this cake?</h3>\\n      <p>{{$ctrl.cake.comment ? $ctrl.cake.comment : 'Nothing yet...'}}</p>\\n      <p>Yum Factor: {{$ctrl.cake.yumFactor || 0}}</p>\\n    </div>\\n  </ion-content>\\n</ion-view>\\n\";\n\n//////////////////\n// WEBPACK FOOTER\n// ./app/cakes/cake.html\n// module id = 44\n// module chunks = 0\n\n//# sourceURL=webpack:///./app/cakes/cake.html?");
 
 /***/ }),
 /* 45 */
@@ -355,6 +355,26 @@ eval("module.exports = \"<ion-view class=\\\"cakes\\\">\\n  <ion-nav-bar side=\\
 
 "use strict";
 eval("\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nvar CakesService = function () {\n  function CakesService($log, $http) {\n    _classCallCheck(this, CakesService);\n\n    this.http = $http;\n    this.log = $log;\n\n    this.server = 'http://ec2-52-209-201-89.eu-west-1.compute.amazonaws.com:5000/api';\n  }\n\n  _createClass(CakesService, [{\n    key: 'getAllCakes',\n    value: function getAllCakes() {\n      return this.http.get(this.server + '/cakes').then(function (response) {\n        return response.data;\n      });\n    }\n  }, {\n    key: 'getCakeById',\n    value: function getCakeById(id) {\n      return this.http.get(this.server + '/cakes/' + id).then(function (response) {\n        return response.data;\n      });\n    }\n  }, {\n    key: 'updateCake',\n    value: function updateCake(cake) {\n      return this.http.put(this.server + '/cakes/' + cake.id, cake).then(function (response) {\n        return response.data;\n      });\n    }\n  }, {\n    key: 'addCake',\n    value: function addCake(cake) {\n      return this.http.post(this.server + '/cakes/', cake).then(function (response) {\n        return response.data;\n      });\n    }\n  }, {\n    key: 'removeCake',\n    value: function removeCake(id) {\n      return this.http.delete(this.server + '/cakes/' + id).then(function (response) {\n        return response.data;\n      });\n    }\n  }]);\n\n  return CakesService;\n}();\n\nangular.module('cakesss').service('cakesService', CakesService);\n\n//////////////////\n// WEBPACK FOOTER\n// ./app/services/cakesService.js\n// module id = 45\n// module chunks = 0\n\n//# sourceURL=webpack:///./app/services/cakesService.js?");
+
+/***/ }),
+/* 46 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _add = __webpack_require__(47);\n\nvar _add2 = _interopRequireDefault(_add);\n\n__webpack_require__(4);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nvar AddCakeController = function () {\n  function AddCakeController($log, cakesService, $state) {\n    _classCallCheck(this, AddCakeController);\n\n    this.log = $log;\n    this.cakesService = cakesService;\n    this.state = $state;\n    this.cake = {\n      yumFactor: 0,\n      comment: ''\n    };\n  }\n\n  _createClass(AddCakeController, [{\n    key: 'submit',\n    value: function submit(cake) {\n      var _this = this;\n\n      this.cakesService.addCake(cake).then(function () {\n        _this.state.go('public.cakes');\n      });\n    }\n  }]);\n\n  return AddCakeController;\n}();\n\nangular.module('cakesss').controller('AddCakeController', AddCakeController).config(function ($stateProvider) {\n  $stateProvider.state('public.add', {\n    url: '/add-cake',\n    views: {\n      'app@': {\n        controller: 'AddCakeController',\n        controllerAs: '$ctrl',\n        template: _add2.default\n      }\n    }\n  });\n});\n\n//////////////////\n// WEBPACK FOOTER\n// ./app/add/addCakeController.js\n// module id = 46\n// module chunks = 0\n\n//# sourceURL=webpack:///./app/add/addCakeController.js?");
+
+/***/ }),
+/* 47 */
+/***/ (function(module, exports) {
+
+eval("module.exports = \"<ion-view class=\\\"cakes\\\">\\n  <ion-nav-bar side=\\\"left\\\">\\n    <button class=\\\"button\\\" back>Back to Cakes</button>\\n  </ion-nav-bar>\\n  <ion-content>\\n  <ion-content>\\n\\n    <div class=\\\"container\\\">\\n      <h1 >Add your own cake</h1>\\n      {{$ctrl.addCakeForm.$valid}}\\n      <form name=\\\"$ctrl.addCakeForm\\\" ng-submit=\\\"$ctrl.addCakeForm.$valid && $ctrl.submit($ctrl.cake)\\\">\\n        <label>\\n          URL of cake\\n          <input type=\\\"text\\\" name=\\\"url\\\" ng-model=\\\"$ctrl.cake.imageUrl\\\" required></label>\\n        </label>\\n        <label>\\n          Cake Name\\n          <input type=\\\"text\\\" name=\\\"name\\\" ng-model=\\\"$ctrl.cake.name\\\" required></label>\\n        </label>\\n        <label>\\n          How good is it?\\n          <input type=\\\"text\\\" name=\\\"comment\\\" ng-model=\\\"$ctrl.cake.comment\\\"></label>\\n        </label>\\n        <label>\\n          How good is it from 1 to 5\\n          <input type=\\\"number\\\" name=\\\"yumFactor\\\" min=\\\"0\\\" max=\\\"5\\\" ng-model=\\\"$ctrl.cake.yumFactor\\\"></label>\\n        </label>\\n        <button type=\\\"submit\\\">Make em drool!!!</button>\\n      </form>\\n    </div>\\n\\n    </div>\\n  </ion-content>\\n</ion-view>\\n\";\n\n//////////////////\n// WEBPACK FOOTER\n// ./app/add/add.html\n// module id = 47\n// module chunks = 0\n\n//# sourceURL=webpack:///./app/add/add.html?");
+
+/***/ }),
+/* 48 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nangular.module('cakesss').directive('back', function ($state) {\n  return {\n    restrict: 'A',\n    link: function link() {\n      $state.go('public.cakes');\n    }\n  };\n});\n\n//////////////////\n// WEBPACK FOOTER\n// ./app/common/directives/backDirective.js\n// module id = 48\n// module chunks = 0\n\n//# sourceURL=webpack:///./app/common/directives/backDirective.js?");
 
 /***/ })
 /******/ ]);
