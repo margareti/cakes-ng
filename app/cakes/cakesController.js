@@ -17,7 +17,6 @@ class CakesController {
   }
 
   goToCake(id) {
-    this.log.info('moo ', id)
     this.state.go('public.cake', ({id: id}))
   }
 }
