@@ -7,10 +7,17 @@ class CakesService {
   }
 
   getAllCakes() {
-    var that = this;
     return this.http.get(`${this.server}/cakes`)
       .then((response) => {
-        that.log.info(response);
+        return response.data;
+      });
+  }
+
+
+  getCakeById(id) {
+    return this.http.get(`${this.server}/cakes/${id}`)
+      .then((response) => {
+        this.log.info('id cake', response);
         return response.data;
       });
   }

@@ -3,12 +3,12 @@ import './main.scss';
 import './app';
 import './common/config';
 import './layout/layoutController.js';
-import './landing/landingController.js';
-
+import './cakes/cakesController.js';
+import './cakes/cakesDetailController.js';
 import './services/cakesService.js';
 
 angular
   .module('cakesss')
   .config(($urlRouterProvider) => {
-    $urlRouterProvider.otherwise('/landing');
+    $urlRouterProvider.otherwise('/cakes');
   });

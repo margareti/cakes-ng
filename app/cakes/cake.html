@@ -1,0 +1,14 @@
+<ion-view class="cakes">
+  <ion-nav-bar side="left">
+    <button class="button" ng-click="$ctrl.back()">Back</button>
+  </ion-nav-bar>
+  <ion-content>
+
+    <div class="cakes__content">
+      <h2>{{$ctrl.cake.name}}</h2>
+      <img class="cakes__img" ng-src="{{$ctrl.cake.imageUrl}}">
+      <h3>Something about this cake?</h3>
+      <p>{{$ctrl.cake.comment ? $ctrl.cake.comment : 'Nothing yet...'}}</p>
+    </div>
+  </ion-content>
+</ion-view>
