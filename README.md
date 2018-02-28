@@ -9,8 +9,12 @@ and ...
 - upload you own cake (we accept URLs only), with comment and yumFactor
 
 
+## To run on Windows
 
-## To build on desktop:
+Please access /www/index.html
+
+
+## To build on desktop (I am sure this works for Mac, for Windows webpack might need special treatment):
 
 please install webpack if you do not already have it
 

@@ -1,5 +1,5 @@
 import template from './add.html';
-import '../cakes/cakes.scss';
+import './cakes.scss';
 
 
 class AddCakeController {
@@ -18,14 +18,18 @@ class AddCakeController {
       this.state.go('public.cakes');
     })
   }
+
+  back() {
+    this.state.go('public.cakes');
+  }
 }
 
 angular
   .module('cakesss')
   .controller('AddCakeController', AddCakeController)
   .config(($stateProvider) => {
-    $stateProvider.state('public.add', {
-      url: '/add-cake',
+    $stateProvider.state('public.upload', {
+      url: '/upload',
       views: {
         'app@': {
           controller: 'AddCakeController',

@@ -1,13 +1,12 @@
 <ion-view class="cakes">
   <ion-nav-bar side="left">
-    <button class="button" back>Back to Cakes</button>
+    <button class="button" ui-sref="public.cakes">Back to Cakes</button>
   </ion-nav-bar>
   <ion-content>
   <ion-content>
 
     <div class="container">
       <h1 >Add your own cake</h1>
-      {{$ctrl.addCakeForm.$valid}}
       <form name="$ctrl.addCakeForm" ng-submit="$ctrl.addCakeForm.$valid && $ctrl.submit($ctrl.cake)">
         <label>
           URL of cake

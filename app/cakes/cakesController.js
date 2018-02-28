@@ -19,6 +19,10 @@ class CakesController {
   goToCake(id) {
     this.state.go('public.cake', ({id: id}))
   }
+
+  goToUpload() {
+    this.state.go('public.upload');
+  }
 }
 
 angular
@@ -27,8 +31,12 @@ angular
   .config(($stateProvider) => {
     $stateProvider.state('public.cakes', {
       url: '/cakes',
-      controller: 'CakesController',
-      controllerAs: '$ctrl',
-      template: template
+      views: {
+        'app@': {
+          controller: 'CakesController',
+          controllerAs: '$ctrl',
+          template: template
+        }
+      }
     });
   });
