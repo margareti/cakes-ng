@@ -27,6 +27,7 @@ npm i
 ```
 npm start
 ```
+the app will be served @ http://localhost:3000/
 
 - to build /www
 ```
