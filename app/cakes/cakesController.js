@@ -17,11 +17,11 @@ class CakesController {
   }
 
   goToCake(id) {
-    this.state.go('public.cake', ({id: id}))
+    this.state.go('cake', ({id: id}))
   }
 
   goToUpload() {
-    this.state.go('public.upload');
+    this.state.go('upload');
   }
 }
 
@@ -29,7 +29,7 @@ angular
   .module('cakesss')
   .controller('CakesController',CakesController)
   .config(($stateProvider) => {
-    $stateProvider.state('public.cakes', {
+    $stateProvider.state('cakes', {
       url: '/cakes',
       views: {
         'app@': {

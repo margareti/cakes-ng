@@ -1,5 +1,5 @@
 import template from './cake.html';
-import './cakes.scss';
+import '../cakes/cakes.scss';
 
 
 class CakesDetailController {
@@ -28,7 +28,7 @@ angular
   .module('cakesss')
   .controller('CakesDetailController',CakesDetailController)
   .config(($stateProvider) => {
-    $stateProvider.state('public.cake', {
+    $stateProvider.state('cake', {
       url: '/cake/:id',
       views: {
         'app@': {

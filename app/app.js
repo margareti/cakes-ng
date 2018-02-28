@@ -5,8 +5,6 @@ import 'ionic';
 import 'ionic-angular';
 import uiRouter from 'angular-ui-router';
 
-// import {StatusBar} from 'ionic-native';
-
 export default angular
   .module('cakesss', [
     'ionic',

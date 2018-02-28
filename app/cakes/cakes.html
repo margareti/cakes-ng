@@ -1,10 +1,6 @@
 <ion-view class="cakes">
-  <ion-nav-bar>
-    <button class="button" ng-click="$ctrl.goToUpload()">Upload your own cake</button>
-  </ion-nav-bar>
-  <ion-content>
-  <ion-content>
 
+  <ion-content>
     <div class="cakes__content">
       <h1 >Cakess</h1>
       <div class="item" ng-repeat="cake in $ctrl.cakes" ng-click="$ctrl.goToCake(cake.id)">
@@ -12,7 +8,6 @@
         <img class="cakes__img" ng-src="{{cake.imageUrl}}">
       </div>
     </div>
-
-    </div>
+    <button class="upload" ui-sref="upload">+</button>
   </ion-content>
 </ion-view>

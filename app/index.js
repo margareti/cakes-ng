@@ -4,8 +4,8 @@ import './app';
 
 import './layout/layoutController.js';
 import './cakes/cakesController.js';
-import './cakes/cakesDetailController.js';
-import './cakes/addCakeController.js';
+import './cakes-detail/cakesDetailController.js';
+import './add/addCakeController.js';
 
 import './services/cakesService.js';
 
