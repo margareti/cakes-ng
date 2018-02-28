@@ -11,12 +11,4 @@ export default angular
   .module('cakesss', [
     'ionic',
     uiRouter
-  ])
-  .run(($rootScope, $ionicSideMenuDelegate) => {
-    var canSwipe = $rootScope.$on('$ionicView.beforeEnter', function () {
-      if ($ionicSideMenuDelegate.canDragContent()) {
-        $ionicSideMenuDelegate.canDragContent(false);
-      }
-    });
-    $rootScope.$on('$destroy', canSwipe);
-  });
+  ]);
